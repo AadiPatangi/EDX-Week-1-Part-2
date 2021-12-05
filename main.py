@@ -57,3 +57,28 @@ print(3*S)
 print(S.replace("C","c")) #replace 1st character with the second
 S = "Nice Camera"
 s = S.split #splits "Nice" and "Camera" into two different objects in a list
+
+#Sets
+#frozen sets are immutable while createed but normal ones are not
+
+ids = set()
+ids = set([2,4,6,8,10])
+print(len(ids)) #gives number of members in the set
+ids.add(12)
+
+ids.pop() #removes an object
+print(len(ids))
+ids = set(range(10))
+print(ids)
+males = set ([1,3,5,7])
+females = ids - males
+print(type(females))
+print(females)
+everyone = males | females
+print(everyone)
+print(everyone & set([1,2,3])) #returns the intersection of both sets
+word = ("antidisestablishmentarianism")
+letters= set(word)
+print(len(letters))
+
+#dictionaries
