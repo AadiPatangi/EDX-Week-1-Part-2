@@ -82,3 +82,19 @@ letters= set(word)
 print(len(letters))
 
 #dictionaries
+#disctionaries are mutable
+age = {}
+age = dict()
+age = {"Tim": 25, "Jim": 38, "harold": 45}
+print(age["Jim"])
+age["Tim"] += 1
+
+name = age.keys() #returns all they keys
+print(type(name))
+print(name)
+
+age["Steve"] = 65  #adding values to the dictionary
+
+ages = age.values() # returns all the values assigned to the keys
+print(ages)
+print("Tim" in age) #checking if keys are in the in the dictionary; returns boulean value
