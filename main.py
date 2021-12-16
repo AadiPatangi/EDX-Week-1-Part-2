@@ -89,7 +89,7 @@ age = {"Tim": 25, "Jim": 38, "harold": 45}
 print(age["Jim"])
 age["Tim"] += 1
 
-name = age.keys() #returns all they keys
+name = age.keys() #returns all they keys which in this case are the names
 print(type(name))
 print(name)
 
